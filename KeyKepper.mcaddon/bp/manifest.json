@@ -1,11 +1,11 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Keykeeper",
-    "description": "Resource pack for the Keykeeper addon",
+    "name": "vahe.keykeeper",
+    "description": "pack.description",
     "uuid": "ba1d53b6-7203-40c7-8344-b5b730927764",
     "version": [1, 0, 0],
-    "min_engine_version": [1, 18, 0]
+    "min_engine_version": [1, 19, 0]
   },
   "modules": [
     {
@@ -15,7 +15,7 @@
     }
   ],
   "metadata": {
-    "authors": [ "Vahe" ],
+    "authors": [ "undefined" ],
     "generated_with": {
       "blockception-minecraft-bedrock": [
         "8.0.4"

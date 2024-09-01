@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "keykeeper:lock",
+      "category": "Misc",
+      "is_experimental": false,
+      "is_glint": false
+    },
+    "components": {
+      "minecraft:icon": "textures/items/lock_texture"
+    }
+  }
+}
