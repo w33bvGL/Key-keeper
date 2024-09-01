@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Keykeeper",
+    "name": "keykeeper",
     "description": "Resource pack for the Keykeeper addon",
     "uuid": "ba1d53b6-7203-40c7-8344-b5b730927764",
     "version": [1, 0, 0],
