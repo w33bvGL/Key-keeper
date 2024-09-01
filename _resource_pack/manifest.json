@@ -1,25 +1,52 @@
 {
-  "format_version": 2,
-  "header": {
-    "name": "keykeeper",
-    "description": "Resource pack for the Keykeeper addon",
-    "uuid": "528ed5e2-5a83-4d3d-bc5d-937187e4cded",
-    "version": [1, 0, 0],
-    "min_engine_version": [1, 18, 0]
-  },
-  "modules": [
-    {
-      "type": "resources",
-      "uuid": "19162118-8f3a-45c1-bd86-2a0c8695ed11",
-      "version": [1, 0, 0]
-    }
-  ],
-  "metadata": {
-    "authors": [ "Vahe" ],
-    "generated_with": {
-      "blockception-minecraft-bedrock": [
-        "8.0.4"
-      ]
-    }
-  }
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"bridge.vahe"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.36"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "keykepper",
+		"description": "",
+		"min_engine_version": [
+			1,
+			20,
+			0
+		],
+		"uuid": "39e09aba-f3fd-4559-87ac-b1a35f3305c6",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "6a87b298-7e07-4862-bf4f-167a7ab1ddc3",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "e78f8ab7-bf80-4684-a316-8ab9abe880df",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
 }
