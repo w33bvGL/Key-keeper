@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "header": {
-    "name": "pack.name",
+    "name": "vahe.keykeeper",
     "description": "pack.description",
     "uuid": "528ed5e2-5a83-4d3d-bc5d-937187e4cded",
     "version": [1, 0, 0],
