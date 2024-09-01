@@ -1,0 +1,9 @@
+##bridge-file-version: #3
+pack.name=Crate Keys Resource
+pack.description=Resource Pack
+item.crate:common.name=§7Common Crate Key
+item.crate:uncommon.name=§2Uncommon Crate Key
+item.crate:rare.name=§1Rare Crate Key
+item.crate:epic.name=§5Epic Crate Key
+item.crate:legendary.name=§6Legendary Crate Key
+item.crate:super.name=§l§fSuper Crate Key

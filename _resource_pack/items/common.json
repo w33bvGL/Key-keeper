@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "keykepper:common",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:icon": "common",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

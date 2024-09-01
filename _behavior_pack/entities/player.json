@@ -1,23 +1,53 @@
+//bridge-file-version: #0
 {
-	"format_version": "1.21.0",
+	"format_version": "1.16.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "minecraft:player",
-			"spawn_category": "creature",
 			"is_spawnable": false,
-			"is_summonable": false
+			"is_summonable": false,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					{
+						"item1": "query.get_equipped_item_name('main_hand') == 'common' && query.is_using_item"
+					},
+					{
+						"item2": "query.get_equipped_item_name('main_hand') == 'uncommon' && query.is_using_item"
+					},
+					{
+						"item3": "query.get_equipped_item_name('main_hand') == 'rare' && query.is_using_item"
+					},
+					{
+						"item4": "query.get_equipped_item_name('main_hand') == 'epic' && query.is_using_item"
+					},
+					{
+						"item5": "query.get_equipped_item_name('main_hand') == 'legendary' && query.is_using_item"
+					},
+					{
+						"item6": "query.get_equipped_item_name('main_hand') == 'super' && query.is_using_item"
+					}
+				]
+			},
+			"animations": {
+				"item1": "animation.item1",
+				"item2": "animation.item2",
+				"item3": "animation.item3",
+				"item4": "animation.item4",
+				"item5": "animation.item5",
+				"item6": "animation.item6"
+			}
 		},
 		"component_groups": {
-			"minecraft:add_raid_omen": {
+			"minecraft:add_bad_omen": {
 				"minecraft:spell_effects": {
 					"add_effects": [
 						{
-							"effect": "raid_omen",
-							"duration": 30,
+							"effect": "bad_omen",
+							"duration": 6000,
 							"display_on_screen_animation": true
 						}
-					],
-					"remove_effects": "bad_omen"
+					]
 				},
 				"minecraft:timer": {
 					"time": [
@@ -26,12 +56,12 @@
 					],
 					"looping": false,
 					"time_down_event": {
-						"event": "minecraft:clear_add_raid_omen",
+						"event": "minecraft:clear_add_bad_omen",
 						"target": "self"
 					}
 				}
 			},
-			"minecraft:clear_raid_omen_spell_effect": {
+			"minecraft:clear_bad_omen_spell_effect": {
 				"minecraft:spell_effects": {}
 			},
 			"minecraft:raid_trigger": {
@@ -40,6 +70,9 @@
 						"event": "minecraft:remove_raid_trigger",
 						"target": "self"
 					}
+				},
+				"minecraft:spell_effects": {
+					"remove_effects": "bad_omen"
 				}
 			}
 		},
@@ -81,24 +114,12 @@
 			"minecraft:attack": {
 				"damage": 1
 			},
-			"minecraft:exhaustion_values": {
-				"heal": 6,
-				"jump": 0.05,
-				"sprint_jump": 0.2,
-				"mine": 0.005,
-				"attack": 0.1,
-				"damage": 0.1,
-				"walk": 0,
-				"sprint": 0.1,
-				"swim": 0.01
-			},
 			"minecraft:player.saturation": {
-				"value": 5,
-				"max": 20
+				"value": 20
 			},
 			"minecraft:player.exhaustion": {
 				"value": 0,
-				"max": 20
+				"max": 4
 			},
 			"minecraft:player.level": {
 				"value": 0,
@@ -118,9 +139,7 @@
 				"always_show": true,
 				"allow_name_tag_renaming": false
 			},
-			"minecraft:physics": {
-				"push_towards_closest_space": true
-			},
+			"minecraft:physics": {},
 			"minecraft:pushable": {
 				"is_pushable": false,
 				"is_pushable_by_piston": true
@@ -158,7 +177,7 @@
 				]
 			},
 			"minecraft:conditional_bandwidth_optimization": {},
-			"minecraft:block_climber": {},
+			"minecraft:scaffolding_climber": {},
 			"minecraft:environment_sensor": {
 				"triggers": {
 					"filters": {
@@ -175,27 +194,27 @@
 							}
 						]
 					},
-					"event": "minecraft:gain_raid_omen"
+					"event": "minecraft:trigger_raid"
 				}
 			}
 		},
 		"events": {
-			"minecraft:gain_raid_omen": {
+			"minecraft:gain_bad_omen": {
 				"add": {
 					"component_groups": [
-						"minecraft:add_raid_omen"
+						"minecraft:add_bad_omen"
 					]
 				}
 			},
-			"minecraft:clear_add_raid_omen": {
+			"minecraft:clear_add_bad_omen": {
 				"remove": {
 					"component_groups": [
-						"minecraft:add_raid_omen"
+						"minecraft:add_bad_omen"
 					]
 				},
 				"add": {
 					"component_groups": [
-						"minecraft:clear_raid_omen_spell_effect"
+						"minecraft:clear_bad_omen_spell_effect"
 					]
 				}
 			},

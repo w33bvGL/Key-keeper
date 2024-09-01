@@ -1,0 +1,59 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.item1": {
+			"loop": true,
+			"animation_length": 0.5,
+			"timeline": {
+				"0": [
+				"/function clickeditems/item1"
+				]
+			}
+		},
+		"animation.item2": {
+			"loop": true,
+			"animation_length": 0.5,
+			"timeline": {
+				"0": [
+					"/function clickeditems/item2"
+				]
+			}
+		},
+		"animation.item3": {
+			"loop": true,
+			"animation_length": 0.5,
+			"timeline": {
+				"0": [
+					"/function clickeditems/item3"
+				]
+			}
+		},
+		"animation.item4": {
+			"loop": true,
+			"animation_length": 0.5,
+			"timeline": {
+				"0": [
+					"/function clickeditems/item4"
+				]
+			}
+		},
+		"animation.item5": {
+			"loop": true,
+			"animation_length": 0.5,
+			"timeline": {
+				"0": [
+					"/function clickeditems/item5"
+				]
+			}
+		},
+		"animation.item6": {
+			"loop": true,
+			"animation_length": 0.5,
+			"timeline": {
+				"0": [
+					"/function clickeditems/item6"
+				]
+			}
+		}
+	}
+}

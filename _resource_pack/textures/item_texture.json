@@ -1,5 +1,24 @@
 {
-	"resource_pack_name": "keykepper",
+	"resource_pack_name": "key kepper",
 	"texture_name": "atlas.items",
-	"texture_data": {}
+	"texture_data": {
+		"common": {
+			"textures": "textures/common"
+		},
+		"uncommon": {
+			"textures": "textures/uncommon"
+		},
+		"rare": {
+			"textures": "textures/rare"
+		},
+		"epic": {
+			"textures": "textures/epic"
+		},
+		"legendary": {
+			"textures": "textures/legendary"
+		},
+		"super": {
+			"textures": "textures/super"
+		}
+	}
 }

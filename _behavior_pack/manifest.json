@@ -1,75 +1,35 @@
 {
-	"format_version": 2,
-	"metadata": {
-		"authors": [
-			"bridge.vahe"
-		],
-		"generated_with": {
-			"bridge": [
-				"2.7.36"
+  "format_version": 2,
+  "header": {
+    "name": "keykeeper",
+    "description": "Resource pack for the Keykeeper addon",
+    "uuid": "ba1d53b6-7203-40c7-8344-b5b730927764",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 13, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "9e248175-4fa8-45e9-8f49-ef35e4da1220",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+		{
+			"version": [
+				1,
+				0,
+				16
 			],
-			"dash": [
-				"0.11.7"
-			]
-		}
-	},
-	"header": {
-		"name": "keykepper",
-		"description": "",
-		"min_engine_version": [
-			1,
-			20,
-			0
-		],
-		"uuid": "e78f8ab7-bf80-4684-a316-8ab9abe880df",
-		"version": [
-			1,
-			0,
-			0
-		]
-	},
-	"modules": [
-		{
-			"type": "data",
-			"uuid": "bc840617-8899-4459-9a30-f036d0576aff",
-			"version": [
-				1,
-				0,
-				0
-			]
-		},
-		{
-			"type": "script",
-			"language": "javascript",
-			"uuid": "7d7f4ef2-40cb-40f7-89c3-47fa32fbe70d",
-			"entry": "scripts/main.js",
-			"version": [
-				1,
-				0,
-				0
-			]
+			"uuid": "3dc16ac9-894e-4f06-ace6-41bb25e8ce73"
 		}
 	],
-	"dependencies": [
-		{
-			"module_name": "@minecraft/server",
-			"version": "1.0.0-beta"
-		},
-		{
-			"module_name": "@minecraft/server-gametest",
-			"version": "1.0.0-beta"
-		},
-		{
-			"module_name": "@minecraft/server-ui",
-			"version": "1.0.0-beta"
-		},
-		{
-			"module_name": "@minecraft/server-admin",
-			"version": "1.0.0-beta"
-		},
-		{
-			"module_name": "@minecraft/server-net",
-			"version": "1.0.0-beta"
-		}
-	]
+  "metadata": {
+    "authors": [ "Vahe" ],
+    "generated_with": {
+      "blockception-minecraft-bedrock": [
+        "8.0.4"
+      ]
+    }
+  }
 }

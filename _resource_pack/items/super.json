@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "keykepper:super",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:icon": "super",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}
